@@ -2,7 +2,7 @@ import { groq } from 'next-sanity';
 
 // GROQ Query to fetch Business Contacts & Site Configuration (handles singleton or any siteConfig document)
 export const siteConfigQuery = groq`
-  *[_type == "siteConfig"][0] {
+  *[_type == "siteConfig" && _id == "siteConfig"][0] {
     _id,
     name,
     tagline,
@@ -21,7 +21,7 @@ export const siteConfigQuery = groq`
 
 // GROQ Query to fetch Founder & CEO Profile
 export const founderQuery = groq`
-  *[_type == "founder"][0] {
+  *[_type == "founder" && _id == "founder"][0] {
     _id,
     name,
     role,
