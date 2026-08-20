@@ -13,7 +13,7 @@ export function constructMetadata({
   noIndex?: boolean;
 } = {}): Metadata {
   return {
-    metadataBase: new URL('https://luxmiflora.com'),
+    metadataBase: new URL('https://www.luxmiflora.com'),
     title,
     description,
     keywords: [
