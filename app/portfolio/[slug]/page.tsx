@@ -15,9 +15,10 @@ export async function generateMetadata({ params }: CaseStudyPageProps) {
   if (!item) return constructMetadata();
 
   return constructMetadata({
-    title: `${item.title} | ${item.couple} Wedding | Luxmi Flora`,
+    title: `${item.title} | ${item.couple} Wedding | Luxmi Flora Sri Lanka`,
     description: item.story,
     image: item.coverImage,
+    path: `/portfolio/${params.slug}`,
   });
 }
 

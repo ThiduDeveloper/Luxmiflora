@@ -8,8 +8,9 @@ import { constructMetadata } from '@/lib/metadata';
 import { Check } from 'lucide-react';
 
 export const metadata = constructMetadata({
-  title: 'Services & Investment Packages | Luxmi Flora Wedding & Events',
-  description: 'Explore our complete menu of wedding floral disciplines including Grand Mandaps, Entrance Tunnels, Reception Stages, and Pricing Tiers.',
+  title: 'Wedding Decoration Services & Packages | Luxmi Flora Sri Lanka',
+  description: 'Explore our wedding decoration services in Sri Lanka — stage decoration, floral arrangements, reception styling, engagement décor, and custom event packages. Serving Bandarawela, Colombo, Kandy & all Sri Lanka.',
+  path: '/services',
 });
 
 export default async function ServicesPage() {

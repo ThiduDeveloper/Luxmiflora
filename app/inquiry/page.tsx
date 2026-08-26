@@ -4,8 +4,9 @@ import { Container } from '@/components/ui/Container';
 import { constructMetadata } from '@/lib/metadata';
 
 export const metadata = constructMetadata({
-  title: 'Bespoke Inquiry & Quote Request | Luxmi Flora Wedding & Events',
-  description: 'Request a consultation and customized floral proposal for your upcoming royal wedding celebration.',
+  title: 'Get a Quote — Wedding Decoration Inquiry | Luxmi Flora Sri Lanka',
+  description: 'Request a free consultation and customized wedding decoration quote from Luxmi Flora in Sri Lanka. Tell us about your dream wedding and we\'ll bring it to life.',
+  path: '/inquiry',
 });
 
 export default function InquiryPage() {
