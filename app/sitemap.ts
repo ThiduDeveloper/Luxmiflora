@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next';
 import { getPortfolioItems } from '@/data/portfolio';
 
+export const revalidate = 3600; // Cache sitemap response for 1 hour to prevent timeouts during Googlebot crawls
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://www.luxmiflora.com';
 
