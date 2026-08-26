@@ -5,8 +5,9 @@ import { Container } from '@/components/ui/Container';
 import { constructMetadata } from '@/lib/metadata';
 
 export const metadata = constructMetadata({
-  title: 'Investment Packages & Pricing Roadmap | Luxmi Flora Wedding & Events',
-  description: 'Explore our complete menu of wedding decor and floral investment tiers, including Essential, Signature, Luxury, and Custom Bespoke options.',
+  title: 'Wedding Decoration Packages & Pricing | Luxmi Flora Sri Lanka',
+  description: 'View our wedding decoration packages — Essential, Signature, Luxury, and Custom Bespoke options. Affordable wedding décor packages in Sri Lanka by Luxmi Flora.',
+  path: '/packages',
 });
 
 export default function PackagesPage() {

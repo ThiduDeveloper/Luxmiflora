@@ -10,8 +10,9 @@ import { getSanityFounder } from '@/sanity/lib/fetch';
 import { urlForImage } from '@/sanity/lib/image';
 
 export const metadata = constructMetadata({
-  title: 'About Luxmi Flora Wedding & Events | Leadership & Craftsmanship',
-  description: 'Learn about Luxmi Flora Wedding & Events history, Founder & CEO Tharun Sharma, sustainable flower sourcing, and 3D spatial design process.',
+  title: 'About Luxmi Flora | Wedding & Event Decoration Studio in Bandarawela, Sri Lanka',
+  description: 'Meet Luxmi Flora Wedding & Events — a premier wedding decoration studio in Bandarawela, Sri Lanka. Founded by Tharun Sharma, we create bespoke floral designs and elegant event décor for weddings across Sri Lanka.',
+  path: '/about',
 });
 
 export default async function AboutPage() {

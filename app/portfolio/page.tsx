@@ -4,8 +4,9 @@ import { Container } from '@/components/ui/Container';
 import { constructMetadata } from '@/lib/metadata';
 
 export const metadata = constructMetadata({
-  title: 'Real Wedding Portfolio Gallery | Luxmi Flora Wedding & Events',
-  description: 'Browse our complete gallery of real royal Indian weddings, palace mandaps, beachfront arches, and gala receptions.',
+  title: 'Wedding Decoration Gallery & Portfolio | Luxmi Flora Sri Lanka',
+  description: 'Browse our real wedding decoration portfolio — stunning stage designs, floral arrangements, reception décor, and venue transformations across Sri Lanka by Luxmi Flora.',
+  path: '/portfolio',
 });
 
 export default function PortfolioPage() {
