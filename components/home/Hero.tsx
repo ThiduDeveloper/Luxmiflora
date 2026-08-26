@@ -6,8 +6,8 @@ import { Container } from '@/components/ui/Container';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-onyx-900 text-ivory-100 overflow-hidden pt-20 w-full">
-      {/* Background Image with 100% Uncompressed Crystal Clear Quality */}
+    <section className="relative min-h-[90vh] sm:min-h-screen flex items-center justify-center bg-black text-ivory-100 overflow-hidden pt-20 sm:pt-24 pb-12 w-full">
+      {/* Background Image with Rich Vibrant Tones & Deep Contrast */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <Image
           src="/images/Gemini_Generated_Image_3ik2l83ik2l83ik2.jpg"
@@ -16,14 +16,14 @@ export const Hero: React.FC = () => {
           priority
           unoptimized
           quality={100}
-          className="object-cover object-center opacity-75"
+          className="object-cover object-center opacity-85"
         />
-        {/* Soft Vignette & Dark Overlay for Text Readability & Depth */}
-        <div className="absolute inset-0 bg-gradient-to-b from-onyx-950/70 via-onyx-900/30 to-onyx-950/90" />
+        {/* Deep Vignette Overlay for Rich Contrast & Readability matching Image 2 */}
+        <div className="absolute inset-0 bg-gradient-to-b from-onyx-950/75 via-onyx-950/25 to-onyx-950/90" />
         <div className="absolute inset-0 bg-gradient-to-r from-onyx-950/60 via-transparent to-onyx-950/60" />
       </div>
 
-      {/* Vertical Left Badge Banner */}
+      {/* Vertical Left Badge Banner (Desktop only) */}
       <div className="absolute left-6 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-center z-10 opacity-70">
         <span className="text-[10px] uppercase tracking-[0.3em] font-sans text-gold-400 [writing-mode:vertical-lr] rotate-180">
           — LUXMI FLORA WEDDING & EVENTS —
@@ -31,35 +31,36 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* Main Content */}
-      <Container className="relative z-10 text-center py-16">
-        <div className="max-w-4xl mx-auto space-y-6">
+      <Container className="relative z-10 text-center py-8 sm:py-16">
+        <div className="max-w-4xl mx-auto space-y-4 sm:space-y-6">
           {/* Eyebrow */}
-          <div className="flex items-center justify-center gap-3">
-            <span className="h-[1px] w-10 bg-gold-400/80" />
-            <span className="text-xs uppercase tracking-[0.3em] text-gold-400 font-sans font-semibold">
+          <div className="flex items-center justify-center gap-2 sm:gap-3">
+            <span className="h-[1px] w-6 sm:w-10 bg-gold-400/80 shrink-0" />
+            <span className="text-[10px] sm:text-xs uppercase tracking-[0.22em] sm:tracking-[0.3em] text-gold-400 font-sans font-semibold whitespace-nowrap">
               WEDDINGS · FLORAL · EVENTS
             </span>
-            <span className="h-[1px] w-10 bg-gold-400/80" />
+            <span className="h-[1px] w-6 sm:w-10 bg-gold-400/80 shrink-0" />
           </div>
 
           {/* Heading */}
-          <h1 className="font-serif text-5xl sm:text-7xl md:text-8xl font-normal text-ivory-100 leading-[1.05] tracking-tight drop-shadow-lg">
-            Where Every<br />
-            Celebration<br />
+          <h1 className="font-serif text-4xl sm:text-7xl md:text-8xl font-normal text-ivory-100 leading-[1.1] sm:leading-[1.05] tracking-tight drop-shadow-lg">
+            Where Every<br className="hidden sm:inline" />{' '}
+            <span className="sm:hidden">Celebration </span>
+            <span className="hidden sm:inline">Celebration<br /></span>
             <span className="text-gold-400 font-serif italic">Blooms.</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xs sm:text-base text-ivory-200 font-sans font-light max-w-xl mx-auto leading-relaxed pt-2 drop-shadow">
+          <p className="text-xs sm:text-base text-ivory-200 font-sans font-light max-w-sm sm:max-w-xl mx-auto leading-relaxed pt-1 sm:pt-2 drop-shadow">
             Transforming weddings and special occasions into unforgettable celebrations with elegant floral designs and beautifully crafted event décor.
           </p>
 
           {/* Scroll Cue */}
-          <div className="pt-12 flex flex-col items-center gap-2 opacity-80">
+          <div className="pt-6 sm:pt-12 hidden sm:flex flex-col items-center gap-2 opacity-80">
             <span className="text-[9px] uppercase tracking-[0.25em] text-ivory-300 font-sans font-light">
               SCROLL TO EXPLORE
             </span>
-            <div className="w-[1px] h-10 bg-gradient-to-b from-gold-400 to-transparent animate-pulse" />
+            <div className="w-[1px] h-8 sm:h-10 bg-gradient-to-b from-gold-400 to-transparent animate-pulse" />
           </div>
         </div>
       </Container>
