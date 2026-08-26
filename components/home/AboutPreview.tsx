@@ -18,12 +18,12 @@ export const AboutPreview: React.FC = () => {
   });
 
   // Calculate subtle translation values for scroll-driven parallax depth
-  const yMain = useTransform(scrollYProgress, [0, 1], [30, -50]);
-  const yDetail = useTransform(scrollYProgress, [0, 1], [60, -90]);
-  const yFrame = useTransform(scrollYProgress, [0, 1], [15, -25]);
+  const yMain = useTransform(scrollYProgress, [0, 1], [15, -30]);
+  const yDetail = useTransform(scrollYProgress, [0, 1], [25, -45]);
+  const yFrame = useTransform(scrollYProgress, [0, 1], [10, -15]);
 
   return (
-    <section ref={sectionRef} className="py-28 bg-ivory-100 text-onyx-900 relative overflow-hidden">
+    <section ref={sectionRef} className="py-20 sm:py-28 bg-ivory-100 text-onyx-900 relative overflow-hidden">
       {/* Decorative subtle background accents */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gold-400/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-maroon-900/5 rounded-full blur-3xl pointer-events-none" />
@@ -32,13 +32,13 @@ export const AboutPreview: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-center">
           
           {/* Left Column: Tall Interactive Overlapping Image Stack */}
-          <div className="lg:col-span-6 relative">
+          <div className="lg:col-span-6 relative pb-8 sm:pb-0">
             <div className="relative w-[90%] sm:w-[85%] lg:w-[100%] max-w-[500px] mx-auto lg:mx-0">
               
               {/* Back Gold Border Accent Frame */}
               <motion.div 
                 style={{ y: yFrame }}
-                className="absolute top-5 -right-5 w-full h-full border border-gold-400/30 rounded-sm -z-10" 
+                className="absolute top-4 -right-4 sm:top-5 sm:-right-5 w-full h-full border border-gold-400/30 rounded-sm -z-10" 
               />
 
               {/* Main Tall Image Card */}
@@ -46,7 +46,7 @@ export const AboutPreview: React.FC = () => {
                 style={{ y: yMain }}
                 className="relative rounded-sm overflow-hidden shadow-2xl border border-ivory-300 bg-white group/main"
               >
-                <div className="w-full h-[480px] sm:h-[580px] lg:h-[680px] overflow-hidden relative">
+                <div className="w-full h-[400px] sm:h-[580px] lg:h-[680px] overflow-hidden relative">
                   <Image
                     src="/images/Website/about.png"
                     alt="Luxmi Flora About Decor"
@@ -58,12 +58,12 @@ export const AboutPreview: React.FC = () => {
                 </div>
               </motion.div>
 
-              {/* Secondary Overlapping Image Card (Tablescape/Detail shot) */}
+              {/* Secondary Overlapping Logo Image Card */}
               <motion.div 
                 style={{ y: yDetail }}
-                className="absolute -bottom-10 -left-6 w-[48%] h-52 sm:h-64 hidden sm:block z-20"
+                className="absolute -bottom-6 -left-3 sm:-bottom-10 sm:-left-6 w-36 sm:w-[48%] h-36 sm:h-64 z-20"
               >
-                <div className="relative w-full h-full rounded-sm overflow-hidden shadow-2xl border border-gold-400/40 bg-black group/detail hover:scale-105 transition-transform duration-500">
+                <div className="relative w-full h-full rounded-sm overflow-hidden shadow-2xl border border-gold-400/50 bg-black group/detail hover:scale-105 transition-transform duration-500">
                   <Image
                     src="/Logo/Luxmi Flora Logo.jpeg"
                     alt="Luxmi Flora Logo"
