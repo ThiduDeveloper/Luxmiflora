@@ -6,8 +6,8 @@ import { Container } from '@/components/ui/Container';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-[90vh] sm:min-h-screen flex items-center justify-center bg-onyx-950 text-ivory-100 overflow-hidden pt-20 sm:pt-24 pb-12 w-full">
-      {/* Background Image with Responsive Focus & Seamless Gradient Overlay */}
+    <section className="relative min-h-[90vh] sm:min-h-screen flex items-center justify-center bg-black text-ivory-100 overflow-hidden pt-20 sm:pt-24 pb-12 w-full">
+      {/* Background Image with Rich Vibrant Tones & Deep Contrast */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <Image
           src="/images/Gemini_Generated_Image_3ik2l83ik2l83ik2.jpg"
@@ -16,11 +16,11 @@ export const Hero: React.FC = () => {
           priority
           unoptimized
           quality={100}
-          className="object-cover object-[65%_center] sm:object-center opacity-65 scale-105"
+          className="object-cover object-center opacity-85"
         />
-        {/* Soft Multi-pass Gradient Overlay to balance text contrast & remove dark blocks */}
-        <div className="absolute inset-0 bg-gradient-to-b from-onyx-950/90 via-onyx-950/45 to-onyx-950/95" />
-        <div className="absolute inset-0 bg-gradient-to-r from-onyx-950/80 via-transparent to-onyx-950/80 hidden sm:block" />
+        {/* Deep Vignette Overlay for Rich Contrast & Readability matching Image 2 */}
+        <div className="absolute inset-0 bg-gradient-to-b from-onyx-950/75 via-onyx-950/25 to-onyx-950/90" />
+        <div className="absolute inset-0 bg-gradient-to-r from-onyx-950/60 via-transparent to-onyx-950/60" />
       </div>
 
       {/* Vertical Left Badge Banner (Desktop only) */}
@@ -43,7 +43,7 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="font-serif text-4xl sm:text-7xl md:text-8xl font-normal text-ivory-100 leading-[1.1] sm:leading-[1.05] tracking-tight drop-shadow-md">
+          <h1 className="font-serif text-4xl sm:text-7xl md:text-8xl font-normal text-ivory-100 leading-[1.1] sm:leading-[1.05] tracking-tight drop-shadow-lg">
             Where Every<br className="hidden sm:inline" />{' '}
             <span className="sm:hidden">Celebration </span>
             <span className="hidden sm:inline">Celebration<br /></span>
@@ -55,7 +55,7 @@ export const Hero: React.FC = () => {
             Transforming weddings and special occasions into unforgettable celebrations with elegant floral designs and beautifully crafted event décor.
           </p>
 
-          {/* Scroll Cue (Hidden on small mobile screens to prevent overlap with floating WhatsApp button) */}
+          {/* Scroll Cue */}
           <div className="pt-6 sm:pt-12 hidden sm:flex flex-col items-center gap-2 opacity-80">
             <span className="text-[9px] uppercase tracking-[0.25em] text-ivory-300 font-sans font-light">
               SCROLL TO EXPLORE
