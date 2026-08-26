@@ -13,6 +13,13 @@ import { Testimonials } from '@/components/home/Testimonials';
 import { CTASection } from '@/components/home/CTASection';
 import { InquiryForm } from '@/components/inquiry/InquiryForm';
 import { Container } from '@/components/ui/Container';
+import { constructMetadata } from '@/lib/metadata';
+
+export const metadata = constructMetadata({
+  title: 'Luxmi Flora | Wedding & Event Decoration Studio in Bandarawela, Sri Lanka',
+  description: 'Luxmi Flora is a premier wedding and event decoration studio in Bandarawela, Sri Lanka. We specialize in elegant wedding stage decoration, floral arrangements, reception styling, and bespoke event décor across Sri Lanka.',
+  path: '/',
+});
 
 export default function HomePage() {
   return (

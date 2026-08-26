@@ -15,7 +15,7 @@ export function constructMetadata({
   noIndex?: boolean;
 } = {}): Metadata {
   const baseUrl = 'https://www.luxmiflora.com';
-  const canonicalUrl = path ? `${baseUrl}${path}` : baseUrl;
+  const canonicalUrl = path === '/' ? baseUrl : path ? `${baseUrl}${path}` : baseUrl;
 
   return {
     metadataBase: new URL(baseUrl),
