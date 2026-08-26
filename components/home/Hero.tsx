@@ -1,24 +1,23 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import { Container } from '@/components/ui/Container';
 
 export const Hero: React.FC = () => {
   return (
     <section className="relative min-h-[90vh] sm:min-h-screen flex items-center justify-center bg-black text-ivory-100 overflow-hidden pt-20 sm:pt-24 pb-12 w-full">
-      {/* Background Image with Rich Vibrant Tones & Deep Contrast */}
+      {/* Background Video with Rich Vibrant Tones & Responsive Framing */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <Image
-          src="/images/Gemini_Generated_Image_3ik2l83ik2l83ik2.jpg"
-          alt="Luxmi Flora Bespoke Luxury Wedding Stage Decoration"
-          fill
-          priority
-          unoptimized
-          quality={100}
-          className="object-cover object-center opacity-85"
-        />
-        {/* Deep Vignette Overlay for Rich Contrast & Readability matching Image 2 */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover object-center opacity-85"
+        >
+          <source src="/images/Website/Tharun Luxmi.webm" type="video/webm" />
+        </video>
+        {/* Deep Vignette Overlay for Rich Contrast & Readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-onyx-950/75 via-onyx-950/25 to-onyx-950/90" />
         <div className="absolute inset-0 bg-gradient-to-r from-onyx-950/60 via-transparent to-onyx-950/60" />
       </div>

@@ -140,7 +140,7 @@ export const AboutPreview: React.FC = () => {
             {/* Interactive Feature List */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl">
               <div className="flex gap-3.5 items-start p-3 bg-white/40 hover:bg-white/90 rounded-sm border border-transparent hover:border-ivory-300 hover:shadow-sm transition-all duration-300 group/item">
-                <div className="w-8 h-8 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-600 group/item:bg-maroon-900 group-hover/item:text-gold-400 transition-all duration-300 mt-0.5 shrink-0">
+                <div className="w-8 h-8 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-600 group-hover/item:bg-maroon-900 group-hover/item:text-gold-400 transition-all duration-300 mt-0.5 shrink-0">
                   <Sparkles className="w-3.5 h-3.5" />
                 </div>
                 <div>
