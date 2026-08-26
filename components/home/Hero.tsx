@@ -10,7 +10,7 @@ export const Hero: React.FC = () => {
       {/* Background Image with 100% Uncompressed Crystal Clear Quality */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <Image
-          src="/Images/Gemini_Generated_Image_3ik2l83ik2l83ik2.jpg"
+          src="/images/Gemini_Generated_Image_3ik2l83ik2l83ik2.jpg"
           alt="Luxmi Flora Bespoke Luxury Wedding Stage Decoration"
           fill
           priority

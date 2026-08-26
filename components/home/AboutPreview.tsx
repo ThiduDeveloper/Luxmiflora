@@ -48,8 +48,8 @@ export const AboutPreview: React.FC = () => {
               >
                 <div className="w-full h-[480px] sm:h-[580px] lg:h-[680px] overflow-hidden relative">
                   <Image
-                    src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=80"
-                    alt="Luxmi Flora Stage Decor"
+                    src="/images/Website/about.png"
+                    alt="Luxmi Flora About Decor"
                     width={800}
                     height={1000}
                     className="object-cover w-full h-full group-hover/main:scale-105 transition-transform duration-700"
@@ -63,10 +63,10 @@ export const AboutPreview: React.FC = () => {
                 style={{ y: yDetail }}
                 className="absolute -bottom-10 -left-6 w-[48%] h-52 sm:h-64 hidden sm:block z-20"
               >
-                <div className="relative w-full h-full rounded-sm overflow-hidden shadow-2xl border border-gold-400/40 bg-white group/detail hover:scale-105 transition-transform duration-500">
+                <div className="relative w-full h-full rounded-sm overflow-hidden shadow-2xl border border-gold-400/40 bg-black group/detail hover:scale-105 transition-transform duration-500">
                   <Image
-                    src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=600&q=80"
-                    alt="Floral Centerpiece Detail"
+                    src="/Logo/Luxmi Flora Logo.jpeg"
+                    alt="Luxmi Flora Logo"
                     fill
                     className="object-cover group-hover/detail:scale-110 transition-transform duration-700"
                   />

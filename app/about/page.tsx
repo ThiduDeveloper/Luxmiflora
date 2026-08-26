@@ -24,7 +24,7 @@ export default async function AboutPage() {
     subtitle: founderData?.subtitle || 'CEO & Principal Floral Architect',
     quote: founderData?.quote || 'Floral engineering is not merely arranging petals; it is the art of sculpting grand architectural environments that evoke timeless royal emotion.',
     bio: founderData?.bio || 'Under Tharun’s visionary leadership, Luxmi Flora has redefined luxury wedding decor across India and Sri Lanka. Combining structural floral engineering with authentic heritage aesthetics, Tharun personally oversees high-society palace weddings, royal mandap architectures, and gala receptions.',
-    image: founderData?.image ? urlForImage(founderData.image).url() : '/Images/Tharun Image.jpeg',
+    image: founderData?.image ? urlForImage(founderData.image).url() : '/images/Tharun Image.jpeg',
     phone: founderData?.phone || '0759695057',
     email: founderData?.email || 'Tharunsharma2@iCloud.com',
     whatsappNumber: founderData?.whatsappNumber || '0759695057',

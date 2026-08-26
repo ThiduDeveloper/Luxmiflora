@@ -9,32 +9,32 @@ const STYLES = [
   {
     title: 'Elegant & Classic',
     desc: 'Timeless white drapery, grand floral arches, and opulent gold details for a sophisticated ceremony.',
-    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80',
+    image: '/images/Website/Elegant&classic.jpg',
   },
   {
     title: 'Garden Romance',
     desc: 'Dreamy outdoor setups under the canopy of trees, trailing jasmines, and warm romantic fairylights.',
-    image: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=800&q=80',
+    image: '/images/Website/garden romance.jpg',
   },
   {
     title: 'Luxury & Grand',
     desc: 'Opulent ballroom settings, cascading floral chandeliers, and majestic stages for a royal wedding affair.',
-    image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80',
+    image: '/images/Website/Luxery.jpg',
   },
   {
     title: 'Minimal & Modern',
     desc: 'Sleek geometric installations, clean tablescapes, and contemporary botanical art for the modern couple.',
-    image: 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=800&q=80',
+    image: '/images/Website/Minimal.jpg',
   },
   {
     title: 'Tropical',
     desc: 'Exotic palm leaves, bright orchids, and lush beachfront arrangements celebrating natural paradise.',
-    image: 'https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=800&q=80',
+    image: '/images/Website/Tropical.jpg',
   },
   {
     title: 'Traditional',
     desc: 'Authentic marigold strings, jasmine draping, and cultural altars honoring heritage and sacred rituals.',
-    image: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80',
+    image: '/images/Website/traditional.jpg',
   },
 ];
 
